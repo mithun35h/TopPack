@@ -1,0 +1,33 @@
+{
+  "name": "TopPack",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js --conf=config.yml",
+    "build": "babel src --out-dir dist",
+    "prestart": "babel src --out-dir dist",
+    "start": "node dist/server.js --conf=config.yml"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "bodybuilder": "^2.1.0",
+    "elasticsearch": "^13.0.0",
+    "express": "^4.15.2",
+    "express-graphql": "^0.6.4",
+    "github": "^9.2.0",
+    "graphql": "^0.9.6",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
+    "nconf": "^0.8.4",
+    "nconf-yaml": "^1.0.2",
+    "winston": "^2.3.1",
+    "winston-daily-rotate-file": "^1.4.6"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.4.0",
+    "nodemon": "^1.11.0"
+  }
+}
